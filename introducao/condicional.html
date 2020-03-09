@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+</head>
+
+<body>
+    <script>
+        function retornaSexo(sexo) {
+            if (sexo == 'M') {
+                return "Masculino";
+            } else if (sexo == 'F') {
+                return "Feminino"
+            } else {
+                return "Favor informar os caracteres 'M' ou 'F'"
+            }
+        }
+
+        let sexo = 'F';
+        resultado = retornaSexo(sexo);
+        console.log(resultado);
+    </script>
+</body>
+
+</html>

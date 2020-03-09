@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+</head>
+
+<body>
+    <script>
+        function retornaSexo(sexo) {
+            switch (sexo) {
+                case 'M':
+                    return "Masculino";
+                    break;
+                case 'F':
+                    return "Feminino";
+                    break;
+                default:
+                    return "Outro";
+                    break;
+            }
+        }
+
+        let sexo = 'O';
+        resultado = retornaSexo(sexo);
+        console.log(resultado);
+    </script>
+</body>
+
+</html>
