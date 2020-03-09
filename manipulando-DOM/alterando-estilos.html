@@ -10,15 +10,14 @@
 
 <body>
     <div id="app">
-        
+        <div class="box"></div>
     </div>
 
     <script>
-        let boxElement = document.getElementById('app')
-        boxElement.style.heigth = 100;
-        boxElement.style.width = 100;
+        let boxElement = document.querySelector('.box');
+        boxElement.style.minHeight = '100px';
+        boxElement.style.maxWidth = '100px';
         boxElement.style.backgroundColor = '#f00';
-
 
     </script>
 </body>
