@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+</head>
+
+<body>
+    <script>
+        let sexo = 'M';
+        let idade = 17;
+        let nome = "Heitor";
+        let lastName = "Neto"
+        let matricula = true;
+        
+        if (sexo === 'M' && idade >= 18) {
+            console.log ("OK");
+        }else{
+            console.log("Cliente não autorizado.");
+        }
+
+        if (nome === 'Heitor' || lastName === "Neto") {
+            console.log ("Membro da familia");
+        }else{
+            console.error("[pessoa desconhecido]");
+        }if (matricula !== true) {
+            console.log("Aluno inválido");
+        } else {
+            console.log("Aluno válido")
+        }
+
+
+
+    </script>
+</body>
+
+</html>

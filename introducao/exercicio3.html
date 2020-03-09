@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        function temHabilidade(skills) {
+            
+            for (let x in skills){ //for in
+                let result = (skills[x] === "Javascript" ? true : false); //condição ternária
+                console.log(result); //loga valor de result
+            }
+        }
+        let skills = ["Javascript", "ReactJS", "React Native"]; //cria vetor
+        temHabilidade(skills); // true ou false
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        function habilidades(usuarios) {
+            for (let vet in usuarios) {
+                console.log(`O ${usuarios[vet].nome} possui as seguintes habilidades:
+                 ${usuarios[vet].habilidades}  `)
+            }
+
+        }
+        let usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+        habilidades(usuarios);
+    </script>
+</body>
+
+</html>
