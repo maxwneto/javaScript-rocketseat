@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com o DOM</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome">
+        <button class="botao">Adicionar</button>
+    </div>
+    <script>
+        let btnElement = document.querySelector('button.botao');
+        let inputElement = document.querySelector('input[name=nome]');
+        btnElement.onclick = function(){
+            var text  = inputElement.value;
+            alert(text);
+        }
+    </script>
+</body>
+
+</html>
