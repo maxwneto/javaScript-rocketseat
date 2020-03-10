@@ -9,41 +9,39 @@
 </head>
 
 <body>
-    <divl>
+    <div>
         <button onclick="addBox()">Addbox</button>
         <div id="box"></div>
-        </div>
-        <script>
+    </div>
+    <script>
 
-            function addBox() {
-                let boxElement = document.createElement('div');
-                boxElement.style.minHeight = '100px';
-                boxElement.style.maxHeight = '100px'
-                boxElement.style.minWidth = '100px';
-                boxElement.style.maxWidth = '100px';
-                boxElement.style.backgroundColor = '#f00';
-                boxElement.style.marginTop = '10px';
-                boxElement.addEventListener("mouseover", () => {
-                    let newColor = getRandomColor();//variavel recebe cor aleatoria
-                    boxElement.style.backgroundColor = newColor; //estilo configurado com a cor aleatoria
-                    console.log(boxElement.id + ": " + newColor);//loga a cor no console
-                });
+        function addBox() {
+            let boxElement = document.createElement('div');
+            boxElement.style.height = '100px';
+            boxElement.style.width = '100px';
+            boxElement.style.backgroundColor = '#f00';
+            boxElement.style.marginTop = '10px';
+            boxElement.addEventListener("mouseover", () => {
+                let newColor = getRandomColor();//variavel recebe cor aleatoria
+                boxElement.style.backgroundColor = newColor; //estilo configurado com a cor aleatoria
+                console.log(boxElement.id + ": " + newColor);//loga a cor no console
+            });
 
-                let container = document.querySelector('#box');
-                container.appendChild(boxElement);
+            let container = document.querySelector('#box');
+            container.appendChild(boxElement);
+        }
+
+        //função para gerar cor aleatória
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
             }
+            return color;
+        }
 
-            //função para gerar cor aleatória
-            function getRandomColor() {
-                var letters = "0123456789ABCDEF";
-                var color = "#";
-                for (var i = 0; i < 6; i++) {
-                    color += letters[Math.floor(Math.random() * 16)];
-                }
-                return color;
-            }
-
-        </script>
+    </script>
 
 
 </body>

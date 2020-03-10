@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <divl>
+    <div>
         <button onclick="addBox()">Addbox</button>
         <div id="box"></div>
     </div>
@@ -16,10 +16,8 @@
 
         function addBox() {
             let boxElement = document.createElement('div');
-            boxElement.style.minHeight = '100px';
-            boxElement.style.maxHeight = '100px'
-            boxElement.style.minWidth = '100px';
-            boxElement.style.maxWidth = '100px';
+            boxElement.style.height = '100px';
+            boxElement.style.width = '100px';
             boxElement.style.backgroundColor = '#f00';
             boxElement.style.marginTop = '10px';
 
