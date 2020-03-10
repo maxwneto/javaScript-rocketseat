@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo li</title>
+</head>
+
+<body>
+    <ul id="nomes"></ul>
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        let container = document.querySelector('#nomes')
+        for (let x in nomes) {
+            let item = document.createElement('li')
+            item.textContent = nomes[x];
+            container.appendChild(item)
+        }
+
+    </script>
+
+</body>
+
+</html>

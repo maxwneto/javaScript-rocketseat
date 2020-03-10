@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input add</title>
+</head>
+<body>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+    <ul id="lNomes"></ul>
+
+    <script>
+        let entrada = document.querySelector('input[name = nome]')
+        let lEntrada = document.querySelector('#lNomes')
+
+        function adicionar(){
+            let text = entrada.value
+            let item = document.createElement('li')
+            item.textContent = text
+            lEntrada.appendChild(item)
+        }
+       
+
+        
+    </script>
+
+</body>
+</html>
